@@ -24,9 +24,9 @@
       "command": "git checkout -"
     },
     {
-      "label": "git merge main",
+      "label": "git merge master",
       "type": "shell",
-      "command": "git merge main"
+      "command": "git merge master"
     },
     {
       "label": "git stash pop",
@@ -42,7 +42,7 @@
         "git checkout master",
         "git pull",
         "git checkout previous branch",
-        "git merge main",
+        "git merge master",
         "git stash pop"
       ],
     }
