@@ -45,6 +45,11 @@
         "git merge master",
         "git stash pop"
       ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
