@@ -34,7 +34,7 @@
       "command": "git stash pop"
     },
     {
-      "label": "git init",
+      "label": "git tasks",
       "type": "shell",
       "dependsOrder": "sequence",
       "dependsOn":[
