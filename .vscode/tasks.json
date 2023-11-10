@@ -1,0 +1,50 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "git stash",
+      "type": "shell",
+      "command": "git stash"
+    },
+    {
+      "label": "git checkout master",
+      "type": "shell",
+      "command": "git checkout master"
+    },
+    {
+      "label": "git pull",
+      "type": "shell",
+      "command": "git pull origin master"
+    },
+    {
+      "label": "git checkout previous branch",
+      "type": "shell",
+      "command": "git checkout -"
+    },
+    {
+      "label": "git merge main",
+      "type": "shell",
+      "command": "git merge main"
+    },
+    {
+      "label": "git stash pop",
+      "type": "shell",
+      "command": "git stash pop"
+    },
+    {
+      "label": "git init",
+      "type": "shell",
+      "dependsOrder": "sequence",
+      "dependsOn":[
+        "git stash",
+        "git checkout master",
+        "git pull",
+        "git checkout previous branch",
+        "git merge main",
+        "git stash pop"
+      ],
+    }
+  ]
+}
